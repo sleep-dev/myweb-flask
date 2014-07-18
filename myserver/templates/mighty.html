@@ -23,7 +23,11 @@
 {% endblock %}
 {% block body %}
 <div class="container">
-    <h1> Hello World </h1>
+    <script>
+window.onload=function(){init();};
+    </script>
+    <canvas id="mainCanvas">
+    </canvas>
 </div>
 {% endblock %}
 
@@ -31,3 +35,11 @@
 <link href="/main.css" rel="stylesheet">
 {% endblock %}
 
+{% block script %}
+<script src="/cardgame.js"></script>
+<script src="/createjs.js"></script>
+<script src="/easeljs.js"></script>
+<script src="/preloadjs.js"></script>
+<script src="/tweenjs.js"></script>
+<script src="/soundjs.js"></script>
+{% endblock %}
